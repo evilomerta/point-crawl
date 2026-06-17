@@ -1,0 +1,16 @@
+// Firestore rules for The Drowned World.
+// Paste these into Firebase Console > Firestore Database > Rules > Publish.
+//
+// This allows read/write only to documents under "games". It is NOT real
+// auth (the site password is client-side), but it stops anyone from touching
+// the rest of your database and is fine for a private gaming group.
+// It also expires nothing, unlike the default 30-day test mode.
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /games/{room} {
+      allow read, write: if true;
+    }
+  }
+}
