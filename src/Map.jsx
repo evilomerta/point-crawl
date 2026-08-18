@@ -83,7 +83,7 @@ export default function MapView({
           const c = FACTIONS[n.faction].color;
           const votes = routeId ? tally[routeId] || 0 : 0;
           const mine = routeId && routeId === myVoteRouteId;
-          const tone = repTone(rep[n.faction] || 0);
+          const tone = { ring: FACTIONS[n.faction].color, w: 2.6, op: 0.85 };
           const labelW = n.name.length * 9.5 + 18;
           const boon = boonNodes.includes(id);
           const clues = cluePins[id] || 0;
