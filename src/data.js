@@ -28,7 +28,7 @@ export const fLabel = (k) => FACTIONS[k] ? `${FACTIONS[k].sym} ${FACTIONS[k].lab
 
 export const NODES = {
   hearth:   { x: 1080, y: 235, name: "Hearthbough",        faction: "Boughs",    start: true },
-  skyhook:  { x: 805,  y: 285, name: "Skyhook",        faction: "Fliers" },
+  skyhook:  { x: 805,  y: 285, name: "Mauritius",        faction: "Faithless" },
   weeping:  { x: 790,  y: 438, name: "Weeping Roots",  faction: "Sunken" },
   spire:    { x: 1035, y: 588, name: "Drowned Spire",  faction: "Sunken" },
   reach:    { x: 632,  y: 330, name: "Umberlee's Reach",   faction: "Faithful" },
